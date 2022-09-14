@@ -26,11 +26,3 @@ public class BookController {
     }
 }
 
-
-//    List<Book> getAllBooks()  die alle Books zurück gibt.
-//    Book getBookById(String id ) die ein einzelnes Book zurück gibt
-//3. Schreibe Unit Tests und mocke dabei das Repo!
-//            4. Implementiere den BookController für den Endpunkt /book , mit folgenden Endpunkten
-//    GET /book  der alle Bücher zurück gibt
-//    GET /book/{id}  der ein einzelnes Buch zurück gibt
-//}
