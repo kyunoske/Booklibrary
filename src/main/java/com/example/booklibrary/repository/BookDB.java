@@ -11,26 +11,26 @@ import java.util.Map;
 @Repository
 public class BookDB {
 
-    private Map<String, Book> studentMap = new HashMap<>(
+    private Map<String, Book> books = new HashMap<>(
             Map.of(
                     "1", new Book("Hans im Glück", "Jacob Grimm", "1"),
                     "2", new Book("Java ist auch eine Insel", "Christian Ullenboom", "2"),
                     "3", new Book("Die besten Flachwitze für Coaches", "Dominic", "3")));
 
-    public List<Book> getAllStudents(){
-        return new ArrayList<Book>(studentMap.values());
+    public List<Book> getAllBooks(){
+        return new ArrayList<Book>(books.values());
     }
 
-    public Book getStudentById(String id){
-        return studentMap.get(id);
+    public Book getBookById(String id){
+        return books.get(id);
     }
 
-    public Book deleteStudentById(String id){
-        return studentMap.remove(id);
+    public Book deleteBookById(String id){
+        return books.remove(id);
     }
 
-    public Book postNewStudent(Book book){
-        return studentMap.put(book.getId(), book);
+    public Book postNewBook(Book book){
+        return books.put(book.getId(), book);
     }
 
 }
