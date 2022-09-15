@@ -24,6 +24,5 @@ public class BookController {
         BookService books = new BookService();
         return books.getBookId(id);
     }
-    //test
 }
 
